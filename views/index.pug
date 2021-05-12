@@ -1,0 +1,18 @@
+doctype 
+html
+  head
+    title= title
+    link(rel='stylesheet', href='./static/css/index.css')
+  body
+    .container
+      each val in [1]
+        div(class=['shooting-star', 'shooting-star-0'+val])
+    p.star-wrapper
+      svg(class='star' width=20 height=20 version='1.1' viewbox='0.0 0.0 50.0 50.0' fill='none' stroke='none' stroke-linecap='square' stroke-miterlimit='10')
+        clipPath(id='p.0')
+          path(d='m0 0 l50.0 0 l0 50.0 l-50.0 0 l0 -50.0z' clip-rule='nonzero')
+        g(clip-path='url(#p.0)')
+          path(fill='#fff' fill-opacity='0' d='m0 0l50.0 0l0 50.0l-50.0 0z' fill-rule='nonzero')
+          path(fill='#fff' d='m0.62204725 25.0 l20.068499 -4.323374 l4.309454 -20.13332 l4.309454 20.13332 l20.068499 4.323374 l-20.068499 4.323374 l-4.309454 20.133318 l-4.309454 -20.133318z' fill-rule='nonzero')
+          path(stroke='#fff' stroke-width='1.0' stroke-linejoin='round' stroke-linecap='butt' d='m0.62204725 25.0 l20.068499 -4.323374 l4.309454 -20.13332l4.309454 20.13332 l20.068499 4.323374 l-20.068499 4.323374 l-4.309454 20.133318 l-4.309454 -20.133318z' fill-rule='nonzero')
+
